@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/s_91_AliceBondMe/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/s_91_AliceBondMe/assets/favorites-968df3b7.js"></script>
+    <link rel="modulepreload" crossorigin href="/s_91_AliceBondMe/assets/modal-rating-5c89ae5f.js">
+    <link rel="stylesheet" href="/s_91_AliceBondMe/assets/modal-rating-68fb00e5.css">
+  </head>
+
+  <body>
+    <!-- Всі класи в даному файлі мають розпочинатись з header-->
+<header class="header">
+  <div class="header-container container">
+    <a class="header-logo" href="./index.html">
+      <svg class="header-logo-img" width="132" height="24">
+        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <ul class="header-pages">
+      <li class="header-pages-item">
+        <a class="header-pages-item-link" href="./index.html">Home</a>
+      </li>
+      <li class="header-pages-item">
+        <a
+          class="header-pages-item-link header-pages-active"
+          href="./favorites.html"
+          >Favorites</a
+        >
+      </li>
+    </ul>
+    <ul class="header-social">
+      <li class="header-social-item">
+        <a
+          class="header-social-item-link"
+          href="https://www.facebook.com/goITclub/" target="_blank" aria-label="Facebook" rel="noopener noreferrer"
+        >
+          <svg class="header-social-item-link-img" width="28" height="28">
+            <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          class="header-social-item-link"
+          href="https://www.instagram.com/goitclub/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"
+        >
+          <svg class="header-social-item-link-img" width="28" height="28">
+            <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          class="header-social-item-link"
+          href="https://www.youtube.com/c/GoIT" target="_blank" aria-label="Youtube" rel="noopener noreferrer"
+        >
+          <svg class="header-social-item-link-img" width="28" height="28">
+            <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="header-burger js-open-menu" type="button">
+      <svg class="header-burger-img" width="32" height="32">
+        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="header-menu js-menu-container" id="mobile-menu">
+  <button
+    type="button"
+    class="header-menu-closed-btn menu-toggle js-close-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg width="32" height="32">
+      <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-x"></use>
+    </svg>
+  </button>
+  <div class="header-mob-wrap">
+    <ul class="header-mob-wrap-pages">
+      <li class="header-mob-wrap-pages-item">
+        <a class="header-mob-wrap-pages-item-link" href="./index.html">Home</a>
+      </li>
+      <li class="header-mob-wrap-pages-item">
+        <a class="header-mob-wrap-pages-item-link" href="./favorites.html"
+          >Favorites</a
+        >
+      </li>
+    </ul>
+    <ul class="header-mob-wrap-social">
+      <li class="header-mob-wrap-social-item">
+        <a
+          class="header-mob-wrap-social-item-link"
+          href="https://www.facebook.com/goITclub/" target="_blank" aria-label="Facebook" rel="noopener noreferrer"
+        >
+          <svg
+            class="header-mob-wrap-social-item-link-img"
+            width="28"
+            height="28"
+          >
+            <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-mob-wrap-social-item">
+        <a
+          class="header-mob-wrap-social-item-link"
+          href="https://www.instagram.com/goitclub/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"
+        >
+          <svg
+            class="header-mob-wrap-social-item-link-img"
+            width="28"
+            height="28"
+          >
+            <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-mob-wrap-social-item">
+        <a
+          class="header-mob-wrap-social-item-link"
+          href="https://www.youtube.com/c/GoIT" target="_blank" aria-label="Youtube" rel="noopener noreferrer"
+        >
+          <svg
+            class="header-mob-wrap-social-item-link-img"
+            width="28"
+            height="28"
+          >
+            <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <main>
+      <section class="favorites">
+        <div class="container">
+          <h2 class="favorites-header">Favorites</h2>
+
+          <div class="favorites-container">
+            <div class="favorites-sidebar">
+              <div class="favorites-sidebar-quote">
+                <div class="favorites-sidebar-quote-icon-container">
+                  <svg
+                    class="favorites-sidebar-quote-icon"
+                    width="18"
+                    height="20"
+                  >
+                    <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-running"></use>
+                  </svg>
+                </div>
+                <div class="favorites-sidebar-quote-text">
+                  <h3 class="favorites-sidebar-quote-text-header">
+                    Quote of the day
+                    <span>
+                      <svg class="favorites-sidebar-quote-text-icon">
+                        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-quot"></use>
+                      </svg>
+                    </span>
+                  </h3>
+                  <p class="favorites-sidebar-quote-text-quotetext">
+                    quotetext
+                  </p>
+                  <p class="favorites-sidebar-quote-text-author">author</p>
+                </div>
+              </div>
+
+              <div class="favorites-sidebar-sportblock">
+                <div class="favorites-sidebar-sportblock-textblock">
+                  <svg
+                    class="favorites-sidebar-sportblock-textblock-icon"
+                    width="16"
+                    height="12"
+                  >
+                    <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-weight"></use>
+                  </svg>
+                  <h3 class="favorites-sidebar-sportblock-textblock-header">
+                    110 min
+                  </h3>
+                  <p class="favorites-sidebar-sportblock-textblock-text">
+                    Daily norm of sports
+                  </p>
+                </div>
+                <div class="favorites-sidebar-sportblock-pic">
+                  <picture class="favorites-sidebar-sportblock-pic-women">
+                    <source
+                      srcset="/s_91_AliceBondMe/assets/favorites-women-desk-1x-min-1065c214.png 1x, /s_91_AliceBondMe/assets/favorites-women-desk-2x-min-10b02be3.png 2x"
+                      media="(min-width: 1440px)"
+                    />
+                    <source
+                      srcset="/s_91_AliceBondMe/assets/favorites-women-tab-1x-min-86ceb364.png 1x, /s_91_AliceBondMe/assets/favorites-women-tab-2x-min-a1a01e85.png 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="/s_91_AliceBondMe/assets/favorites-women-mob-1x-min-0cb3885f.png 1x, /s_91_AliceBondMe/assets/favorites-women-mob-2x-min-cdd70b3f.png 2x"
+                      media="(max-width:
+                  767px)"
+                    />
+                    <img
+                      src="/s_91_AliceBondMe/assets/favorites-women-desk-1x-min-1065c214.png"
+                      alt="women-sportswear-working-out-outdoors"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div id="favorites-container-js">
+              <p class="favorites-exercises-none">
+                It appears that you haven't added any exercises to your
+                favorites yet. To get started, you can add exercises that you
+                like to your favorites for easier access in the future.
+              </p>
+              <ul class="favorites-rating_list"></ul>
+            </div>
+          </div>
+          <div class="favorites-pages">
+            <ul class="favorites-pages-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+<div class="backdrop is-hidden js-backdrop" data-modal>
+  <div class="modal" data-id="">
+    <button class="modal-x-button" data-modal-close type="button">
+      <svg class="modal-icon-x" width="24px"  height= "24px">
+        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-x" ></use>
+      </svg>
+      </button>
+  <div class="modal-section">
+    <img class="modal-gif" src="https://ftp.goit.study/img/power-pulse/gifs/0570.gif" alt="exercise example" />
+    <div class=modal-describtion-container>
+      <h3 class="modal-exercise-name">Air bake</h3>
+      <div class="modal-rating">
+        <span class="modal-rating-value">4.0</span>  
+        <div class="starring">
+            <svg class="modal-icon-star" width="18" height="18" data-value="1">
+              <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+            </svg>
+            <svg class="modal-icon-star" width="18" height="18" data-value="2">
+                <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+            </svg>
+            <svg class="modal-icon-star" width="18" height="18" data-value="3">
+              <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+            </svg>
+            <svg class="modal-icon-star" width="18" height="18" data-value="4">
+              <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+            </svg>
+            <svg class="modal-icon-star" width="18" height="18" data-value="5">
+                <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+            </svg>
+        <div class="stars-overlay"></div>
+        </div>
+      </div>
+      <div class="modal-description-block">
+        <ul class="modal-description-block-items">
+          <li>
+            <h4>Target</h4>
+            <p class="modal-target">as</p>
+          </li>
+          <li>
+            <h4>Body Part</h4>
+            <p class="modal-bodyPart">wast</p>
+          </li>
+          <li>
+            <h4>Equipment</h4>
+            <p class="modal-equipment">body weght</p>
+          </li>
+          <li>
+            <h4>Popular</h4>
+            <p class="modal-popularity">0</p>
+          </li>
+          <li>
+            <h4>Burned Calories</h4>
+            <p class="modal-burnedCalories">323/3 min</p>
+          </li>
+        </ul>
+        <span class="modal-description-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas ducimus delectus est minima aliquam ullam rem repudiandae, corrupti porro? Quos nisi eum aliquid molestias inventore minima omnis itaque officiis? </span>
+      </div>
+    </div>
+  </div>
+  <div class="buttons-container">
+    <button class="modal-favorites-add" type="button">Add to favorites
+      <svg class="modal-icon-heart">
+        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-heart"></use>
+      </svg>
+    </button>
+    <button class="modal-rating-open" type="button" data-rating-open>Give a rating </button>
+  </div>
+</div>
+</div>
+
+
+
+<button id="scrollToTopBtn" class="scroll-top-btn">
+  
+  <svg class="modal-icon-arrow">
+    <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-arrow"></use>
+  </svg>
+
+
+</button>
+
+    
+<div class="backdrop is-hidden" data-rating>
+    <div class="rating">
+        <button type="button" class="rating-btn-close" data-rating-close>
+            <svg width="24" height="24" class="raiting-close-icon">
+                <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-x"></use>
+            </svg>
+        </button>
+
+        <h3 class="rating-title">Rating</h3>
+        <div class="rating-wrap">
+            <fieldset class="rating-container">
+                <input type="radio" name="rating" id="rate5" value="5" class="rating-radio">
+                <label for="rate5" class="rating-label">
+                    <svg width="24" height="24" class="rating-star">
+                        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+                    </svg>
+                </label>
+                <input type="radio" name="rating" id="rate4" value="4" class="rating-radio">
+                <label for="rate4" class="rating-label">
+                    <svg width="24" height="24" class="rating-star">
+                        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+                    </svg>
+                </label>
+                <input type="radio" name="rating" id="rate3" value="3" class="rating-radio">
+                <label for="rate3" class="rating-label">
+                    <svg width="24" height="24" class="rating-star">
+                        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+                    </svg>
+                </label>
+                <input type="radio" name="rating" id="rate2" value="2" class="rating-radio">
+                <label for="rate2" class="rating-label">
+                    <svg width="24" height="24" class="rating-star">
+                        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+                    </svg>
+                </label>
+                <input type="radio" name="rating" id="rate1" value="1" class="rating-radio">
+                <label for="rate1" class="rating-label">
+                    <svg width="24" height="24" class="rating-star">
+                        <use href="/s_91_AliceBondMe/assets/symbol-defs-156601c6.svg#icon-star"></use>
+                    </svg>
+                </label>
+            <span class="rating-number"></span>
+            </fieldset>
+        </div>
+        <form class="rating-form" autocomplete="off">
+            <label>
+                <input type="email" name="email" placeholder="Email" class="rating-email" required/>
+            </label>
+            <label>
+                <textarea name="message" rows="4" maxlength="250" placeholder="Your comment" class="rating-comment" required></textarea>
+            </label>
+            <button type="submit" class="rating-btn-submit">Send</button>
+        </form>
+    </div>
+</div>
+    
+  </body>
+</html>
